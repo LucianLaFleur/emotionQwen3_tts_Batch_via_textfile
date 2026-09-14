@@ -1,8 +1,17 @@
 # """
-# Qwen3-TTS Emotional Voice Clone Node for ComfyUI
-# ULTIMATE EDITION: 70+ emotions + multi-emotion mixing
+# credit to original emotion-control file --> Dawizzer -- github.com/Dawizzer
 
-# Place in: ComfyUI/custom_nodes/ComfyUI-Qwen-TTS/qwen3_emotional_clone.py
+# Requires a text file indicated by MY_INPUT_TEXT to work.
+#  default is "qwen3_emotional_line_input.txt
+# to rename the dir created for output audios rename the variable --> OUTPUT_DIR_NAME
+
+#  formatting for text file lines: 
+# text|emotion1|emotion2|emotion3|intensity float (e.g. 1.1)
+
+# Example of a valid line for the input text:
+# Hi there|happy|none|none|1.3
+
+
 # """
 
 import os
@@ -21,7 +30,9 @@ if current_dir not in sys.path:
     sys.path.insert(0, current_dir)
 
 # custom file for input controls
-INPUT_FILE = os.path.join(current_dir, "qwen3_emotional_line_input.txt")
+INPUT_FILE = os.path.join(current_dir, MY_INPUT_TEXT)
+MY_INPUT_TEXT = "qwen3_emotional_line_input.txt
+OUTPUT_DIR_NAME = "emotional_audio_output"
 
 # Import shared utilities from nodes.py
 from .nodes import (
@@ -238,7 +249,7 @@ class FB_Qwen3TTSEmotionalVoiceClone:
     def _save_batch_audio(self, audio_data, index, row):
         output_dir = os.path.join(
             folder_paths.get_output_directory(),
-            "emotional_output"
+            OUTPUT_DIR_NAME
         )
         os.makedirs(output_dir, exist_ok=True)
 
