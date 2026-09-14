@@ -31,7 +31,7 @@ if current_dir not in sys.path:
 
 # custom file for input controls
 INPUT_FILE = os.path.join(current_dir, MY_INPUT_TEXT)
-MY_INPUT_TEXT = "qwen3_emotional_line_input.txt
+MY_INPUT_TEXT = "qwen3_emotional_line_input.txt"
 OUTPUT_DIR_NAME = "emotional_audio_output"
 
 # Import shared utilities from nodes.py
