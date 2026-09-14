@@ -1,0 +1,9 @@
+That was a good workout. |happy|energetic|confident|1.0
+That was a good workout. |happy|energetic|confident|1.4
+That was a good workout. |happy|energetic|confident|1.8
+Excellent work. Now it's time to hit the showers!|surprised|mocking|none|1.0
+Excellent work. Now it's time to hit the showers!|surprised|mocking|none|1.4
+Excellent work. Now it's time to hit the showers!|surprised|mocking|none|1.8
+That's a job well done. I bet you're really tired now, huh?|sarcastic|condescending|smug|1.0
+That's a job well done. I bet you're really tired now, huh?|sarcastic|condescending|smug|1.4
+That's a job well done. I bet you're really tired now, huh?|sarcastic|condescending|smug|1.8
